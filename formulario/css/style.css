@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;700&display=swap');
+/* confg zera tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', Sans-serif;
+}
+/* config zera tudo fim*/
+
+html{ /* faz os botões que mandam para cima e para baixo na pagina irem mais devagar*/
+    scroll-behavior: smooth;
+}
+
+.body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* configuração section e footer*/
+section, footer {
+    padding: 30px 0;
+}
+
+/* configuração titulo 01*/
+h3{
+    font-size: 40px;
+}
+
+/* configuração paragrafo 01*/
+p{
+    font-weight: 400;
+    color: rgb(63, 63, 63); /* cor do testinho*/
+}
+
+/* configuração container*/
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* começo footer/rodapés */
+
+.footer{
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+/* fim footer/rodapés */
+
+/* COMEÇO INFOR + FORMULARIO*/
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    padding: 0px 60px 0px 60px;
+    background-image: url(../img/fundo\ form.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-form2{
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.contato-info2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 40px 0px 50px 0px;
+}
+
+.contato-info2 .left-site2{
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;  /* até aqui colocar no FORMULARIO*/
+}
+
+.contato-info2 .left-site2 div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info2 .left-site2 img{
+    width: 250px;
+}
+
+.contato-info2 .left-site2 p{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.contato-info2 .left-site2 .subheadline2{
+    font-size: 19.2px;
+    padding: 12px 0px 0px 0px;;
+}
+
+
+/* COMEÇO DA PAGINA DO formulario*/
+.contato-info2 .right-site2{
+    width: 90%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 100px;
+    background: linear-gradient(to top, #000000, #5a1015, #df2935); /* daqui + FORMULARIO*/
+    border-radius: 14px;
+    margin-right: 5px;
+    height: fit-content;
+    border: 1px solid #000000;
+}
+
+.contato-info2 .right-site2 p{
+    color: rgb(255, 255, 255);
+    padding: 0px 0px 16px 0px;
+    font-size: 25px;
+}
+
+.contato-info2 .right-site2 input{
+    display: block;
+    width: 100%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+    margin-bottom: 10px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.right-site2 .btn-form2{
+    display: block;
+    width: 100%; /* isso diz quanto do espaço disponivel o negocio vai ocupar*/
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 0.8px solid #ff9f1c;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 26px;
+    background-color: #ff9f1c;
+}
+/* fim DA PAGINA DO formulario*/
+
+
+/* COMEÇO RESPONSIVO*/
+
+@media(max-width: 830px){
+
+/* PAGINA do formulario*/
+
+.contato{
+    padding: 0px 0px 0px 0px;
+}
+
+.container-form2{
+    margin: 0px 5px 0px 5px;
+    padding: 0px 0;
+}
+
+.contato .contato-info2{
+    flex-direction: column;
+}
+
+.contato-info2 .left-site2{
+    margin: 0px 0px 20px 0px;
+}
+
+.contato-info2 .left-site2 img{
+    width: 170px;
+}
+
+.contato-info2 .left-site2 p{
+    font-size: 29px;
+}
+
+.contato-info2 .left-site2 .subheadline2{
+    font-size: 19px;
+}
+
+.contato-info2 .right-site2,
+.contato-info2 .left-site2{
+    width: 100%;
+}
+
+.right-site2 .btn-form2{
+    font-size: 20px;
+}
+
+.contato-info2 .right-site2{
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    margin-right: 0px;
+}
+
+.contato-info2 .right-site2 p{
+     padding: 0px 0px 16px 0px;
+     font-size: 20px;
+}
+
+.container-form2{
+    text-align: center;
+}
+
+
+/* PAGINA sdo formulario*/
+
+}
+
