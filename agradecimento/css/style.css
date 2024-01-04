@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat&display=swap');
+/* confg zera tudo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{ /* faz os botões que mandam para cima e para baixo na pagina irem mais devagar*/
+  scroll-behavior: smooth;
+}
+
+/* config zera tudo fim*/
+
+body{
+    background-color: #f1f6fc31;
+}
+
+/* configuração section e footer*/
+section, footer {
+    padding: 54px 0;
+}
+
+/* configuração titulo 01*/
+h3{
+    font-size: 40px;
+}
+
+/* configuração paragrafo 01*/
+p{
+    color: #0000009c; /* cor do testinho*/
+}
+
+.rosa1{
+  color: #ff9f1c;
+}
+
+/* configuração container*/
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+
+.btn:hover{
+    background-color: #3280db;
+}
+
+/*começo da pagina de agradecimento*/
+
+.contato2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+  padding: 0px 60px 0px 60px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background: linear-gradient(to top, #000000, #5a1015, #df2935);
+}
+
+.container-form3{
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+}
+
+.contato-info3{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.contato-info3 .left-site3{
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  border-radius: 14px;
+  margin-right: 50px;
+  height: fit-content;  /* até aqui colocar no FORMULARIO*/
+}
+
+.contato-info3 .left-site3 div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contato-info3 .left-site3 img{
+  width: 250px;
+}
+
+.contato-info3 .left-site3 p{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+
+.contato-info3 .left-site3 .subheadline3{
+  font-size: 19.2px;
+  padding: 12px 0px 0px 0px;;
+}
+
+/*fim da pagina de agradecimento*/
+
+/* começo footer/rodapés */
+
+.footer{
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p{
+  margin-top: 10px;
+  color: white;
+}
+
+/* fim footer/rodapés */
+
+@media(max-width: 830px){
+/*começo da pagina de agradecimento*/
+
+.contato2{
+  padding: 0px 0px 0px 0px;
+}
+
+.container-form3{
+  margin: 0px 5px 0px 5px;
+  padding: 0px 0;
+}
+
+.contato2 .contato-info3{
+  flex-direction: column;
+}
+
+.contato-info3 .left-site3{
+  margin: 0px 0px 20px 0px;
+}
+
+.contato-info3 .left-site3 img{
+  width: 170px;
+}
+
+.contato-info3 .left-site3 p{
+  font-size: 29px;
+}
+
+.contato-info3 .left-site3 .subheadline3{
+  font-size: 19px;
+}
+
+.contato-info3 .right-site3{
+  width: 100%;
+}
+
+/*fim da pagina de agradecimento*/
+
+
+} 
